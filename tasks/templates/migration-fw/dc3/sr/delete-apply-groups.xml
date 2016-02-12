@@ -1,0 +1,8 @@
+<configuration>
+    <routing-instances>
+        <instance>
+           <name>{{ trigram }}</name>
+           <apply-groups operation="delete">vrf-cust</apply-groups>
+        </instance>
+    </routing-instances>
+</configuration>

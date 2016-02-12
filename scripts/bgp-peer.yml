@@ -1,0 +1,18 @@
+---
+
+BgpPeerTable:
+  rpc: get-bgp-neighbor-information
+  item: bgp-peer
+  key: bgp-peer
+  view: BgpPeerTableView
+
+BgpPeerTableView:
+  fields:
+    peer_address: peer-address
+    peer_as: peer-as
+    description: description
+    peer_state: peer-state
+    peer_type: peer-type
+    prefix_received: bgp-rib/received-prefix-count
+    table: bgp-rib/name
+    policy: bgp-option-information/export-policy 

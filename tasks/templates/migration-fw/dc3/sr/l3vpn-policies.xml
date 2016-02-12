@@ -1,0 +1,25 @@
+<configuration>
+    <policy-options>
+        <policy-statement>
+	    <name>l3vpn-{{ trigram }}-export</name>
+	    <term>
+	        <name>10</name>
+		<then>
+		    <community operation="delete">
+		        <add/>
+		        <community-name>l3vpn-custs</community-name>
+		    </community>
+		</then>
+	    </term>
+	</policy-statement>
+        <policy-statement>
+            <name>l3vpn-{{ trigram }}-import</name>
+            <term>
+                <name>10</name>
+		<from>
+		    <community operation="delete">l3vpn-admin</community>
+		</from>
+            </term>
+        </policy-statement>
+    </policy-options>
+</configuration>
