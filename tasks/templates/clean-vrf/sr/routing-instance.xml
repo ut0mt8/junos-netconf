@@ -1,9 +1,0 @@
-<configuration>
-    <routing-instances>
-        <instance>
-            <name>{{ trigram }}</name>
-            <vrf-import operation="delete">l3vpn-{{ trigram }}-import</vrf-import>
-            <vrf-export operation="delete">l3vpn-{{ trigram }}-export</vrf-export>
-        </instance>
-    </routing-instances>
-</configuration>
