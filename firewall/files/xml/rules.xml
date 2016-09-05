@@ -1,0 +1,6 @@
+<configuration>
+    <groups>
+        <name>custs-to-admin</name>
+        <security operation="delete"/>
+    </groups>
+</configuration>

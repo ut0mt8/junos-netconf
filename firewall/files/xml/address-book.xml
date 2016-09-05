@@ -1,0 +1,7 @@
+<configuration>
+    <security>
+        <address-book operation="delete">
+            <name>global</name>
+        </address-book>
+    </security>
+</configuration>
